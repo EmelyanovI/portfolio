@@ -1,4 +1,5 @@
 html, body{
+    scroll-behavior: smooth;
     height: 100%;
     font-family: 'Montserrat', serif;
     font-style: normal;
@@ -14,16 +15,17 @@ html, body{
 /*шапка сайта*/
 #header{
     width: 100%;
-    height: 1000px;
-    background-color: ;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, transparent 20%),
+    height: 100%;
+    margin: 0 0 150px 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, transparent 24%),
     url('../image/imPhoto@2x.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .header{
-    padding: 20px 0;
+    padding: 30px 0 0 0;
     position: relative;
     width: 100%;
 }
@@ -34,7 +36,7 @@ html, body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 600px;
+    gap: 470px;
 }
 
 .logo{
@@ -53,7 +55,7 @@ html, body{
 
 .menu__list{
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .menu__link{
@@ -66,10 +68,193 @@ html, body{
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.4s;
+    text-shadow: #1D334a95 2px 2px 4px;
 }
 
 .menu__link:hover {
+    color: #e20000;
     transition: all 0.4s;
     background-size: 100% 2px;
 }
+
+.welcome__inner{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.welcome__content{
+    width: 660px;
+}
+
+.welcome__name{
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #f7f7f7;
+    padding: 334px 0 0 0;
+}
+
+.welcome__title{
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #f7f7f7e4;
+    padding: 10px 0 0 0;
+}
+
+.welcome__text{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.03em;
+    color: #f7f7f7;
+    padding: 10px 0 0 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcom__social{
+    flex-direction: column;
+    padding: 310px 0 0 0;
+}
+
+.welcome__content{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.welcom__item{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+.welcom__item:hover{
+    opacity: 0.5;
+}
+
+.welcome__link__mail{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/icon-mail-withe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome__link__github{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/icon-github-withe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome__link__vk{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/icon-vk-withe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome__link__telegram{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/icon-telegram-withe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome__link__inst{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/icon-inst-withe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Загаловок сайта*/
+.portfolio__title{
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    padding: 0 0 40px 0;
+}
+
+.portfolio__container{
+    padding: 0 0 30px 0;
+}
+
+.portfolio__link{
+    color: #f7f7f7;
+    text-decoration: none;
+    position: relative;
+}
+
+.portfolio__img{
+    border-radius: 30px;
+    height: 550px;
+    background-size: cover;
+    box-shadow: #1d334a95 8px 9px 20px;
+}
+
+.portfolio__img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    background: transparent;
+    background-image: linear-gradient(180deg, 
+    rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.5) 
+    100%);
+}
+
+.portfolio__link-title{
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.portfolio__link-title:hover{
+    color: #e20000;
+    transition: all 0.4s ease;
+}
+
+.portfolio__link-text{
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.portfolio__link-text:hover{
+    color: #e20000;
+    transition: all 0.4s ease;
+}
+
+.portfolio__container:last-child{
+    padding: 0 0 80px 0;
+}
