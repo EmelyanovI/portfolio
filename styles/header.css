@@ -1,0 +1,52 @@
+/*шапка сайта*/
+.header{
+    padding: 10px 0 0 0;
+    width: 100%;
+    height: 125px;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(to bottom,
+    rgb(255, 255, 255, 0.8) 0%, transparent 90%);
+}
+.header__inner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 470px;
+    
+}
+.logo{
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #4E5754;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #e20000;
+    transition: all 0.4s ease;
+}
+.menu__list{
+    display: flex;
+    gap: 50px;
+}
+.menu__link{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.4s;
+    text-shadow: #1D334a95 2px 2px 4px;
+}
+.menu__link:hover {
+    color: #e20000;
+    transition: all 0.25s;
+    background-size: 100% 2px;
+}

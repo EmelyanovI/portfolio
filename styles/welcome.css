@@ -1,0 +1,87 @@
+#welcome{
+    width: 100%;
+    margin: 0 0 150px 0;
+}
+.welcome{
+    height: 756px;
+    background-image: url('../image/imPhoto@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.welcome__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__content{
+    width: 660px;
+}
+.welcome__name{
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #f7f7f7;
+    padding: 334px 0 0 0;
+}
+.welcome__title{
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #f7f7f7e4;
+    padding: 10px 0 0 0;
+}
+.welcome__text{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.03em;
+    color: #f7f7f7;
+    padding: 10px 0 0 0;
+}
+.welcome__content{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.welcome__item{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+.welcome__item:hover{
+    opacity: 0.5;
+}
+.welcome__link__mail,
+.welcome__link__github,
+.welcome__link__vk,
+.welcome__link__telegram,
+.welcome__link__inst{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome__link__mail{
+    background-image: url('../image/icon-mail-withe.png');
+}
+.welcome__link__github{
+    width: 55px;
+    height: 55px;
+    background-image: url('../image/icon-github-withe.png');
+}
+.welcome__link__vk{
+    background-image: url('../image/icon-vk-withe.png');
+}
+.welcome__link__telegram{
+    background-image: url('../image/icon-telegram-withe.png');
+}
+.welcome__link__inst{
+    background-image: url('../image/icon-inst-withe.png');
+}
