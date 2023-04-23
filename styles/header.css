@@ -42,7 +42,6 @@
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.4s;
-    text-shadow: #1D334a95 2px 2px 4px;
 }
 .menu__link:hover {
     color: #e20000;

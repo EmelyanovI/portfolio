@@ -19,12 +19,34 @@
                 <a class="logo" href="#">EI</a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#portfolio">портфолио</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#skils">компетенции</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#tasks">услуги</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#contaсts">контакты</a></li>
+                        <li class="menu__item"><a class="menu__link shadow" href="#portfolio">портфолио</a></li>
+                        <li class="menu__item"><a class="menu__link shadow" href="#skils">компетенции</a></li>
+                        <li class="menu__item"><a class="menu__link shadow" href="#tasks">услуги</a></li>
+                        <li class="menu__item"><a class="menu__link shadow" href="#feedback">контакты</a></li>
                     </ul>
                 </nav>
+                <div class="menu__btn js-menu__btn"></div>
+            </div>
+        </div>
+        <div class="menu__burger js-menu__burger">
+            <div class="menu__burger-wrapper js-menu__burger-wrapper">
+                <div class="menu__burger-logo">
+                    <a class="logo" href="#">Emelyanov<br>Igor'</a>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#portfolio">портфолио</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#skils">компетенции</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#tasks">услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#feedback">контакты</a></li>
+                </ul>
+                <h2 class="menu__burger-title">контакты:</h2>
+                <ul class="menu__burger-contact">
+                    <li><a class="menu__burger-contact-link" target="_blank" href="mailto:dev.emelyanovii@gmail.com">mail</a></li>
+                    <li><a class="menu__burger-contact-link" target="_blank" href="https://github.com/EmelyanovI">github</a></li>
+                    <li><a class="menu__burger-contact-link" target="_blank" href="https://vk.com/dev.emelyanov">vkontakte</a></li>
+                    <li><a class="menu__burger-contact-link" target="_blank" href="https://t.me/mr_varr">telegram</a></li>
+                    <li><a class="menu__burger-contact-link" target="_blank" href="https://www.instagram.com/mr_varr">Instagram</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -163,10 +185,10 @@
             </div>
         </section>-->
         <!--Контакты-->
-        <section id="contaсts">
-            <div class="contacts">
+        <section id="feedback">
+            <div class="feedback">
                 <div class="container">
-                    <h2 class="contacts__title">Для связи со мной заполните простую форму:</h2>
+                    <h2 class="feedback__title">Для связи со мной заполните простую форму:</h2>
                     <form class="form" action>
                         <input class="input" type="name"
                         name="name" placeholder="Имя/Name" autocomplete="on">
@@ -182,9 +204,36 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-        <p class="footer__text">Портфолио FrontEnd разработчик Игоря Емельянова. Все права защищены 2023</p>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <p class="footer__info-im">Портфолио FrontEnd разработчик Игоря Емельянова.</p>
+                    <nav class="menu">
+                        <ul class="menu__list footer__info-nav">
+                            <li class="menu__item"><a class="menu__link footer__info-link" href="#portfolio">портфолио</a></li>
+                            <li class="menu__item"><a class="menu__link footer__info-link" href="#skils">компетенции</a></li>
+                            <li class="menu__item"><a class="menu__link footer__info-link" href="#tasks">услуги</a></li>
+                            <li class="menu__item"><a class="menu__link footer__info-link" href="#feedback">контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__contacts">
+                    <ul class="social social-footer">
+                        <li class="contacts__item"><a class="contacts__link__mail" href="mailto:dev.emelyanovii@gmail.com"></a>Mail</li>
+                        <li class="contacts__item"><a class="contacts__link__github" href="https://github.com/EmelyanovI"></a>GitHub</li>
+                        <li class="contacts__item"><a class="contacts__link__vk" href="https://vk.com/dev.emelyanov"></a>Vkontakte</li>
+                        <li class="contacts__item"><a class="contacts__link__telegram" href="https://t.me/mr_varr"></a>Telegram</li>
+                        <li class="contacts__item"><a class="contacts__link__inst" href="https://www.instagram.com/mr_varr"></a>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footer__text">Все права защищены 2023</p>
     </footer>
+
     <script src="js/index.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/popup.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>
