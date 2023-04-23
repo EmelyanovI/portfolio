@@ -5,7 +5,7 @@
 @import url(../styles/tasks.css);
 @import url(../styles/contacts.css);
 @import url(../styles/footter.css);
-@import url(../styles/buttom.css);
+@import url(../styles/button.css);
 
 html, body{
     scroll-behavior: smooth;
@@ -14,14 +14,6 @@ html, body{
     font-style: normal;
     font-weight: 400;
     color: #1D334A;
-}
-body{/*фоновый рисунок*/
-    margin: 0;
-    background: url(../image/binary-code.png);
-    background-size: cover;
-    background-attachment: fixed; 
-    background-blend-mode: color-burn;
-    background-color: rgba(255, 255, 255, 0.95);
 }
 .container{
     max-width: 1185px;
@@ -32,16 +24,45 @@ body{/*фоновый рисунок*/
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 310px 0 15px 0;
-    gap: 20px;
-}
-.social{
-    display: flex;
-    justify-content: center;
+    padding: 290px 0 0 0;
     gap: 20px;
     font-size: 60px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: -0.03em;
+}
+@media (max-width: 1199px) and (min-width: 961px){
+    .container{
+        padding: 0 25px;
+    }
+    .social__contacts{
+        padding: 60px 0 0 0;
+    }
+}
+@media (max-width: 960px) and (min-width: 769px){
+    .container{
+        padding: 0 30px;
+    }
+    .social{
+        padding: 265px 0 0 0;
+        gap: 15px;
+    }
+    
+}
+@media (max-width: 768px) and (min-width: 576px){
+    .container{
+        padding: 0 30px;
+    }
+    .social{
+        display: none;
+    }
+}
+@media (max-width: 575px){
+    .container{
+        padding: 0 30px;
+    }
+    .social{
+        display: none;
+    }
 }
 
