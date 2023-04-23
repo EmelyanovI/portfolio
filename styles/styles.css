@@ -1,9 +1,10 @@
 @import url(../styles/header.css);
+@import url(../styles/burger.css);
 @import url(../styles/welcome.css);
 @import url(../styles/portfolio.css);
 @import url(../styles/skils.css);
 @import url(../styles/tasks.css);
-@import url(../styles/contacts.css);
+@import url(../styles/feedback.css);
 @import url(../styles/footter.css);
 @import url(../styles/button.css);
 
@@ -24,12 +25,20 @@ html, body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
     padding: 290px 0 0 0;
-    gap: 20px;
+    gap: 15px;
     font-size: 60px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: -0.03em;
+}
+.social-footer{
+    align-items: end;
+    padding: 0;
+}
+.shadow{
+    text-shadow: #1D334a95 2px 2px 4px;
 }
 @media (max-width: 1199px) and (min-width: 961px){
     .container{

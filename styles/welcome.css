@@ -5,6 +5,7 @@
 .welcome{
     position: relative;
     min-height: 100vh;
+    padding: 0 0 20px 0;
 }
 .welcome::before{
     content: "";
@@ -110,9 +111,20 @@
     #welcome{
         margin: 0 0 100px 0;
     }
+    .welcome::after{
+        background-size: cover;
+    }
+    .welcome__inner{
+        padding: 300px 0 0 0;
+    }
     .welcome__content{
         width: 660px;
-        padding: 280px 0 0 0;
+        margin: 140px auto 0;
+        padding: 180px 0 0 0;
+        text-align: center;
+        border-radius: 20px;
+        background: linear-gradient(to top,
+        #ffffff 0%, transparent 60%);
     }
     .welcome__link__mail,
     .welcome__link__github,
@@ -132,7 +144,8 @@
         margin: 0 0 80px 0;
     }
     .welcome::after{
-        background-size: cover;
+        background-size: contain;
+        background-position: bottom;
     }
     .welcome__content{
         width: 90%;
@@ -164,7 +177,8 @@
         margin: 0 0 80px 0;
     }
     .welcome::after{
-        background-size: cover;
+        background-size: contain;
+        background-position: bottom;
     }
     .welcome__content{
         width: 100%;

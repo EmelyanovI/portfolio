@@ -36,10 +36,19 @@
     color: #fff;
     background-color: #db2222;
 }
-@media (max-width: 1199px) and (min-width: 820px) {
-    
+@media (max-width: 1199px) and (min-width: 961px){
 }
-@media (max-width: 819px) and (min-width: 576px) {
+@media (max-width: 960px) and (min-width: 769px){
+    .full-btn{
+        max-height: 153px;
+    }
+    .full-btn__small{
+        font-size: 18px;
+        line-height: 25px;
+        padding: 18px 0;
+    }
+}
+@media (max-width: 768px) and (min-width: 576px){
     .full-btn{
         max-height: 153px;
     }
@@ -52,7 +61,7 @@
 @media (max-width: 575px){
     .full-btn{
         font-size: calc(22px + 8 * (100vw - 350px) / 849);
-        line-height: calc(30px + 11 * (100vw - 350px) / 225);
+        line-height: calc(30px + 11 * (100vw - 350px) / 849);
         padding: 37px 0;
     }
     .full-btn__small{
