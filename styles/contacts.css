@@ -1,10 +1,10 @@
 /*Контакты*/
 #contaсts{
-    margin: 150px 0 0 0;
+    margin: 0 0 150px 0;
     position: relative;
     border-radius: 30px;
     background-image: linear-gradient(180deg, 
-    rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 0, 0.5) 
+    rgba(255, 255, 255, 0.8) 10%, rgba(0, 0, 0, 0.2) 
     100%);
 }
 .contacts{
@@ -15,57 +15,41 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
-    padding-bottom: 89px;
+    padding: 0 0 60px 0;
 }
 .contacts__title{
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 28px;
-    padding: 320px 0 28px 0;
+    width: 860px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 10px 0 0 0;
 }
-.contacts__content{
-    opacity: 1;
-    transition: all 1.5s;
-    transform: translateY(0%);
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 60px 0 26px 0;
+    width: 576px;
 }
-.contacts__item{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    opacity: 0.9;
-    transition: all 0.3s;
-    color: #4E5754;
+.input{
+    width: 100%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    outline: none;
 }
-.contacts__item:hover{
-    opacity: 0.5;
+@media (max-width: 1199px) and (min-width: 961px){
+    #contaсts{
+        margin: 100px 0 0 0;
+    }
 }
-.contacts__link__mail,
-.contacts__link__github,
-.contacts__link__vk,
-.contacts__link__telegram,
-.contacts__link__inst{
-    position: absolute;
-    left: 350px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.6;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 960px) and (min-width: 769px){
+    
 }
-.contacts__link__mail{
-    background-image: url('../image/icon-mail.png');
+@media (max-width: 768px) and (min-width: 576px){
 }
-.contacts__link__github{
-    width: 55px;
-    height: 55px;
-    background-image: url('../image/icon-github.png');
-}
-.contacts__link__vk{
-    background-image: url('../image/icon-vk.png');
-}
-.contacts__link__telegram{
-    background-image: url('../image/icon-telegram.png');
-}
-.contacts__link__inst{
-    background-image: url('../image/icon-inst.png');
+@media (max-width: 575px){
 }

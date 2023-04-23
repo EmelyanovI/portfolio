@@ -1,20 +1,19 @@
 /*шапка сайта*/
 .header{
+    position: absolute;
     padding: 10px 0 0 0;
     width: 100%;
     height: 125px;
-    position: fixed;
-    z-index: 1000;
+    z-index: 2;
     background: linear-gradient(to bottom,
     rgb(255, 255, 255, 0.8) 0%, transparent 90%);
 }
 .header__inner{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 470px;
     
 }
 .logo{
@@ -49,4 +48,25 @@
     color: #e20000;
     transition: all 0.25s;
     background-size: 100% 2px;
+}
+@media (max-width: 1199px) and (min-width: 961px){
+    .container{
+        padding: 0 25px;
+    }
+    .social__contacts{
+        padding: 60px 0 0 0;
+    }
+}
+@media (max-width: 960px) and (min-width: 769px){
+    
+}
+@media (max-width: 768px) and (min-width: 576px){
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 575px){
+    .menu{
+        display: none;
+    }
 }
