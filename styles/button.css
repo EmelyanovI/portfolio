@@ -11,11 +11,14 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
-.full-btn__white,
+.full-btn__white:hover,
 .full-btn__small:hover{/*изменение красная->белая кнопка*/
     color: #db2222;
     background-color: #ffffff;
-    box-shadow: 0 0 10px 10px #db222280;
+}
+.full-btn__white:active,
+.full-btn__small:active{
+    box-shadow: 0 0 10px 10px #db222280; 
 }
 .full-btn__small{/*маленькая красная кнопка*/
     width: 255px;
@@ -35,6 +38,44 @@
 .full-btn__small-popup:hover{
     color: #fff;
     background-color: #db2222;
+}
+.full-btn__white:active,
+.full-btn__small-popup:active{
+    box-shadow: 0 0 10px 10px #db222280;
+}
+.btn-up{/*Кнопка возврата вверх*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 80px;
+    height: 60px;
+    bottom: 0;
+    opacity: 0.4;
+    background-color: #8fb4c9;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(0);
+}
+.btn-up::before{/*Стрелка кнопки возврата вверх*/
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../image/arrow-next.svg);
+    transform: rotate(270deg);
+    background-size: 100% 100%;
+}
+.btn-up:hover{
+    opacity: 1;
+    }
+.btn-up__hide{
+    display: none;
+}
+.btn-up__hiding{
+    opacity: 0;
+    transform: translateY(100px)
 }
 @media (max-width: 1199px) and (min-width: 961px){
 }

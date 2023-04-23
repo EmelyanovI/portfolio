@@ -8,7 +8,7 @@
     position: absolute;
     right: 0;
     z-index: 11;
-    transition: width 150ms linear 400ms, top 150ms linear 250ms, transform 150ms ease 100ms;
+    transition: width 150ms linear 200ms, top 150ms linear 250ms, transform 150ms ease 100ms;
 }
 .menu__burger{
     position: fixed;
@@ -35,7 +35,7 @@
     border-bottom-left-radius: 50px;
     background-color: #ffffff;
     overflow-y: auto;
-    transition: transform 0.3s linear;
+    transition: transform 250ms linear;
     transform: translateX(100%);
 }
 .menu__burger-open .menu__burger-wrapper{
@@ -53,9 +53,10 @@
     margin: 0 0 10px 0;
 }
 .menu__burger-contact-link{
-    font-size: 20px;
+    font-size: 24px;
     line-height: 45px;
     letter-spacing: -0.01em;
+    text-transform: uppercase;
     text-decoration: none;
     color: #121212;
 }
