@@ -20,7 +20,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link shadow" href="#portfolio">портфолио</a></li>
-                        <li class="menu__item"><a class="menu__link shadow" href="#skils">компетенции</a></li>
+                        <li class="menu__item"><a class="menu__link shadow" href="#skill">компетенции</a></li>
                         <li class="menu__item"><a class="menu__link shadow" href="#tasks">услуги</a></li>
                         <li class="menu__item"><a class="menu__link shadow" href="#feedback">контакты</a></li>
                     </ul>
@@ -35,7 +35,7 @@
                 </div>
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="#portfolio">портфолио</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#skils">компетенции</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#skill">компетенции</a></li>
                         <li class="menu__item"><a class="menu__link" href="#tasks">услуги</a></li>
                         <li class="menu__item"><a class="menu__link" href="#feedback">контакты</a></li>
                 </ul>
@@ -75,84 +75,88 @@
             </div>
         </section>
         <!--Загаловок сайта-->
-        <!--<section id="portfolio">
+        <section id="portfolio">
             <div class="container">
                 <h2 class="title">Самые свежие проекты</h2>
                 <div class="portfolio__container"> 
                     <a class="portfolio__link" href="https://emelyanovi.github.io/maket-landing/">
                         <div class="portfolio__img" style="background-image: url(image/site1.jpg);"></div>
-                        <h3 class="portfolio__link-title">Maket Landing Page</h3>
-                        <p class="portfolio__link-text">дизайн, верстка, настройка</p>
+                        <div class="portfolio__link-inner">
+                            <h3 class="portfolio__link-title">Maket Landing Page</h3>
+                            <p class="portfolio__link-text">дизайн, верстка, настройка</p>
+                        </div>
                     </a>
                 </div>
                 <div class="portfolio__container"> 
                     <a class="portfolio__link" href="https://emelyanovi.github.io/metrika/">
                         <div class="portfolio__img" style="background-image: url(image/site2.jpg);"></div>
-                        <h3 class="portfolio__link-title">Metrika</h3>
-                        <p class="portfolio__link-text">разработка интерфейса</p>
+                        <div class="portfolio__link-inner">
+                            <h3 class="portfolio__link-title">Metrika</h3>
+                            <p class="portfolio__link-text">разработка интерфейса</p>
+                        </div>
                     </a>
                 </div>
                 <div class="portfolio__container"> 
                     <a class="portfolio__link" href="https://emelyanovi.github.io/nothingear/">
                         <div class="portfolio__img" style="background-image: url(image/site3.jpg);"></div>
-                        <h3 class="portfolio__link-title">Nothing Ear</h3>
-                        <p class="portfolio__link-text">разработка интерфейса</p>
+                        <div class="portfolio__link-inner">
+                            <h3 class="portfolio__link-title">Nothing Ear</h3>
+                            <p class="portfolio__link-text">разработка интерфейса</p>
+                        </div>
                     </a>
                 </div>
-                <a class="portfolio__btn" href="#portfolio">Смотреть все проекты</a>
+                <a class="full-btn" href="portfolio.html">Смотреть все проекты</a>
             </div>
-        </section>-->
+        </section>
         <!--Мои навыки-->
-        <!--<section id="skils">
+        <section id="skill">
             <div class="container">
                 <h2 class="title">Мои навыки</h2>
-                <div class="skils">
-                    <img class="skils__icon" src="image/icon-html.svg" alt="Icon HTML">
-                    <h2 class="skils__title">HTML и CSS</h2>
-                    <p class="skils__text">это основа фронтенд разработки. 
-                        Умение создавать и правильно структурировать HTML-документы, 
-                        а также применять стили к этим документам на CSS, является обязательным 
-                        навыком для каждого фронтенд разработчика.
-                    </p>
-                </div>
-                <div class="skils">
-                    <img class="skils__icon" src="image/icon-js.svg" alt="Icon JS">
-                    <h2 class="skils__title">JavaScript</h2>
-                    <p class="skils__text">это язык программирования, который 
-                        используется для создания динамического и интерактивного 
-                        пользовательского интерфейса. Хороший фронтенд разработчик 
-                        должен быть знаком с основами JavaScript, включая работу с 
-                        DOM-деревом, асинхронными запросами и манипуляцией данными на 
-                        стороне клиента.
-                    </p>
-                </div>
-                <div class="skils">
-                    <img class="skils__icon" src="image/icon-phone.svg" alt="Icon Phone">
-                    <h2 class="skils__title">Работа с библиотеками и фреймворками</h2>
-                    <p class="skils__text">фронтенд разработчики должны быть знакомы с различными 
-                        библиотеками и фреймворками, такими как React, Angular, Vue и другими. 
-                        Умение использовать готовые решения, адаптировать их под нужды проекта и 
-                        расширять их функциональность, является очень важным навыком.
-                    </p>
-                </div>
-                <div class="skils">
-                    <img class="skils__icon" src="image/icon-atom.svg" alt="Icon Atom">
-                    <h2 class="skils__title">Разработка для мобильных устройств и адаптивная верстка</h2>
-                    <p class="skils__text">фронтенд разработчики должны быть знакомы с различными 
-                        библиотеками и фреймворками, такими как React, Angular, Vue и другими. 
-                        Умение использовать готовые решения, адаптировать их под нужды проекта и 
-                        расширять их функциональность, является очень важным навыком.
-                    </p>
-                </div>
+                <ul class="skill__list">
+                    <li class="skill__inner">
+                        <h2 class="skill__title">HTML и CSS</h2>
+                        <p class="skill__text">это основа фронтенд разработки. 
+                            Умение создавать и правильно структурировать HTML-документы, 
+                            а также применять стили к этим документам на CSS, является обязательным 
+                            навыком для каждого фронтенд разработчика.
+                        </p>
+                    </li>
+                    <li class="skill__inner">
+                        <h2 class="skill__title">JavaScript</h2>
+                        <p class="skill__text">это язык программирования, который используется для 
+                            создания динамического и интерактивного пользовательского интерфейса. 
+                            Хороший фронтенд разработчик должен быть знаком с основами JavaScript, 
+                            включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными 
+                            на стороне клиента.
+                        </p>
+                    </li>
+                    <li class="skill__inner">
+                        <h2 class="skill__title">Работа с библиотеками и фреймворками</h2>
+                        <p class="skill__text">фронтенд разработчики должны быть знакомы с различными 
+                            библиотеками и фреймворками, такими как React, Angular, Vue и другими. 
+                            Умение использовать готовые решения, адаптировать их под нужды проекта и 
+                            расширять их функциональность, является очень важным навыком.
+                        </p>
+                    </li>
+                    <li class="skill__inner">
+                        <h2 class="skill__title">Разработка для мобильных устройств и адаптивная верстка</h2>
+                        <p class="skill__text">Адаптивная вёрстка меняет дизайн страницы в зависимости от 
+                            поведения пользователя, платформы, размера экрана и ориентации девайса и является 
+                            неотъемлемой частью современной веб-разработки. Она позволяет существенно экономить 
+                            и не отрисовывать новый дизайн для каждого разрешения, а менять размеры и 
+                            расположение отдельных элементов.
+                        </p>
+                    </li>
+                </ul>
             </div>
-        </section>-->
+        </section>
         <!--Задачи-->
-        <!--<section id="tasks">
+        <section id="tasks">
             <div class="container">
                 <h2 class="tasks__title">Помогаю реализовать широкий спектр задач</h2>
                 <div class="tasks">
-                    <img class="tasks__img" src="image/devel.png" alt="Photo Development">
                     <div class="tasks__box">
+                        <img class="tasks__img" src="image/devel.png" alt="Photo Development">
                         <h2 class="tasks__box__title">Разработка сайта под ключ</h2>
                         <p class="tasks__box__text">Это создание дизайн веб-сайтов, созданный для 
                         удобства пользователя и решения бизнес-задач. Сайты должны быть 
@@ -162,8 +166,8 @@
                     </div>
                 </div>
                 <div class="tasks">
-                    <img class="tasks__img" src="image/layout.png" alt="Photo Layout">
                     <div class="tasks__box">
+                        <img class="tasks__img" src="image/layout.png" alt="Photo Layout">
                         <h2 class="tasks__box__title">Верстка сайтов</h2>
                         <p class="tasks__box__text">Это процесс создания HTML-документов и 
                             применения к ним стилей на CSS. Фронтенд разработчик может помочь 
@@ -172,8 +176,8 @@
                     </div>
                 </div>
                 <div class="tasks">
-                    <img class="tasks__img" src="image/devel phone.png" alt="Photo Development Phone">
                     <div class="tasks__box">
+                        <img class="tasks__img" src="image/devel phone.png" alt="Photo Development Phone">
                         <h2 class="tasks__box__title">Разработка мобильного интерфейса</h2>
                         <p class="tasks__box__text">Это процесс создания интерактивных элементов на 
                             странице с помощью JavaScript. Фронтенд разработчик может помочь создать 
@@ -183,13 +187,13 @@
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
         <!--Контакты-->
         <section id="feedback">
             <div class="feedback">
                 <div class="container">
                     <h2 class="feedback__title">Для связи со мной заполните простую форму:</h2>
-                    <form class="form" action>
+                    <form class="form">
                         <input class="input" type="name"
                         name="name" placeholder="Имя/Name" autocomplete="on">
                         <input class="input" type="name"
@@ -208,10 +212,10 @@
             <div class="footer__wrapper">
                 <div class="footer__info">
                     <p class="footer__info-im">Портфолио FrontEnd разработчик Игоря Емельянова.</p>
-                    <nav class="menu">
+                    <nav class="menu footer__menu">
                         <ul class="menu__list footer__info-nav">
                             <li class="menu__item"><a class="menu__link footer__info-link" href="#portfolio">портфолио</a></li>
-                            <li class="menu__item"><a class="menu__link footer__info-link" href="#skils">компетенции</a></li>
+                            <li class="menu__item"><a class="menu__link footer__info-link" href="#skill">компетенции</a></li>
                             <li class="menu__item"><a class="menu__link footer__info-link" href="#tasks">услуги</a></li>
                             <li class="menu__item"><a class="menu__link footer__info-link" href="#feedback">контакты</a></li>
                         </ul>
@@ -219,11 +223,11 @@
                 </div>
                 <div class="footer__contacts">
                     <ul class="social social-footer">
-                        <li class="contacts__item"><a class="contacts__link__mail" href="mailto:dev.emelyanovii@gmail.com"></a>Mail</li>
-                        <li class="contacts__item"><a class="contacts__link__github" href="https://github.com/EmelyanovI"></a>GitHub</li>
-                        <li class="contacts__item"><a class="contacts__link__vk" href="https://vk.com/dev.emelyanov"></a>Vkontakte</li>
-                        <li class="contacts__item"><a class="contacts__link__telegram" href="https://t.me/mr_varr"></a>Telegram</li>
-                        <li class="contacts__item"><a class="contacts__link__inst" href="https://www.instagram.com/mr_varr"></a>Instagram</li>
+                        <li class="contacts__item"><a class="contacts__link__mail" target="_blank" href="mailto:dev.emelyanovii@gmail.com"></a>Mail</li>
+                        <li class="contacts__item"><a class="contacts__link__github" target="_blank" href="https://github.com/EmelyanovI"></a>GitHub</li>
+                        <li class="contacts__item"><a class="contacts__link__vk" target="_blank" href="https://vk.com/dev.emelyanov"></a>Vkontakte</li>
+                        <li class="contacts__item"><a class="contacts__link__telegram" target="_blank" href="https://t.me/mr_varr"></a>Telegram</li>
+                        <li class="contacts__item"><a class="contacts__link__inst" target="_blank" href="https://www.instagram.com/mr_varr"></a>Instagram</li>
                     </ul>
                 </div>
             </div>

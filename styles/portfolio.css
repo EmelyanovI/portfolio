@@ -1,5 +1,6 @@
 #portfolio{
     display: block;
+    margin: 0 0 150px 0;
 }
 .title{
     font-size: 55px;
@@ -9,7 +10,7 @@
     padding: 0 0 40px 0;
 }
 .portfolio__container{
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
 }
 .portfolio__link{
     color: #f7f7f7;
@@ -43,10 +44,6 @@
     font-weight: 600;
     line-height: 45px;
 }
-.portfolio__link-title:hover{
-    color: #e20000;
-    transition: all 0.4s ease;
-}
 .portfolio__link-text{
     position: absolute;
     left: 50px;
@@ -55,30 +52,57 @@
     font-weight: 500;
     line-height: 39px;
 }
-.portfolio__link-text:hover{
+.portfolio__link-inner:hover{
     color: #e20000;
     transition: all 0.4s ease;
 }
-
-.portfolio__container:last-child{
-    padding: 0 0 80px 0;
+@media (max-width: 1199px) and (min-width: 961px){
+    #portfolio{
+        margin: 0 0 120px 0;
+    }
 }
-.portfolio__btn{
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 60px;
-    display: block;
-    margin: 0 auto;
-    width: 450px;
-    height: 60px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 25px;
-    color: #f7f7f7;
-    background-color: #4E5754;
+@media (max-width: 960px) and (min-width: 769px){
+    #portfolio{
+        margin: 0 0 100px 0;
+    }
 }
-.portfolio__btn:hover{
-    color: #e20000;
-    border: 2px solid #e20000;
-    background-color: #ffffff;
+@media (max-width: 768px) and (min-width: 576px){
+    #portfolio{
+        margin: 0 0 80px 0;
+    }
+    .title{
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .portfolio__img{
+        width: 100%;
+        background-position: 50% 50%;
+        height: 300px;
+    }
+}
+@media (max-width: 575px){
+    #portfolio{
+        margin: 0 0 80px 0;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .portfolio__img{
+        background-position: 50% 50%;
+        height: 300px;
+    }
+    .portfolio__link-title{
+        font-size: 26px;
+        line-height: 36px;
+        left: 15px;  
+    }
+    .portfolio__link-text{
+        font-size: 20px;
+        line-height: 26px;
+        left: 15px;  
+    }
 }

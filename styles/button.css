@@ -1,9 +1,9 @@
 .full-btn{/*основа, большая красная кнопка*/
     display: block;
     width: 100%;
-    line-height: 153px;
+    line-height: 80px;
     border: 1px solid #db2222;
-    border-radius: 5px;
+    border-radius: 60px;
     background-color: #db2222;
     color: white;
     font-size: 30px;
@@ -11,11 +11,13 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
+.full-btn:hover,
 .full-btn__white:hover,
 .full-btn__small:hover{/*изменение красная->белая кнопка*/
     color: #db2222;
     background-color: #ffffff;
 }
+.full-btn:active,
 .full-btn__white:active,
 .full-btn__small:active{
     box-shadow: 0 0 10px 10px #db222280; 
@@ -27,20 +29,11 @@
     padding: 20px 0;
     border-radius: 30px;
 }
-.full-btn__small-popup{/*маленькая красная кнопка (Popup)*/
-    width: 86%;
-    padding: 20px 0;
-    margin: 0 auto 86px;
-    font-size: 20px;
-    line-height: 27px;
-}
-.full-btn__white:hover,
-.full-btn__small-popup:hover{
+.full-btn__white:hover{
     color: #fff;
     background-color: #db2222;
 }
-.full-btn__white:active,
-.full-btn__small-popup:active{
+.full-btn__white:active{
     box-shadow: 0 0 10px 10px #db222280;
 }
 .btn-up{/*Кнопка возврата вверх*/
@@ -81,7 +74,7 @@
 }
 @media (max-width: 960px) and (min-width: 769px){
     .full-btn{
-        max-height: 153px;
+        max-height: 80px;
     }
     .full-btn__small{
         font-size: 18px;
@@ -91,7 +84,7 @@
 }
 @media (max-width: 768px) and (min-width: 576px){
     .full-btn{
-        max-height: 153px;
+        max-height: 80px;
     }
     .full-btn__small{
         font-size: 18px;
@@ -111,9 +104,4 @@
         line-height: 22px;
         padding: 14.5px 0;
     }
-    .full-btn__small-popup{
-        width: 92%;
-        margin: 0 auto 80px;
-        padding: 20px 0;
-        }
 }

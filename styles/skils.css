@@ -1,34 +1,114 @@
 /*Мои навыки*/
-#skils{
-    margin-top: 150px;
+#skill{
+    margin: 0 0 150px 0;
 }
-.skils{
-    width: 770px;
+.skill__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.skill__inner{
+    width: calc(50% - 25px);
     position: relative;
-    padding: 0 0 60px 0;
+    padding: 40px 0 10px 0;
 }
-.skils__icon {
+.skill__inner::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
     width: 45px;
-    height: 44px;
-    padding: 1.2%;
-    background-color: #e20000;
-    margin: 8px 0 12px 0;
+    height: 45px;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #e20000;
 }
-.skils__title{
-    font-size: 35px;
+.skill__inner:nth-child(1)::before{
+    background-image: url(../image/icon-html.svg);
+}
+.skill__inner:nth-child(2)::before{
+    background-image: url(../image/icon-js.svg);
+}
+.skill__inner:nth-child(3)::before{
+    background-image: url(../image/icon-phone.svg);
+}
+.skill__inner:nth-child(4)::before{
+    background-image: url(../image/icon-atom.svg);
+}
+.skill__title{
+    display: block;
+    font-size: 34px;
     font-weight: 400;
     line-height: 45px;
     letter-spacing: -0.03em;
     color: #e20000;
 }
-.skils__text{
+.skill__text{
+    display: block;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: -0.03em;
     padding: 15px 0 0 0;
 }
-.skils:last-child{
-    padding: 0 0 0 0;
+@media (max-width: 1199px) and (min-width: 961px){
+    #skill{
+        margin: 0 0 120px 0;
+    }
+    .skill__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 960px) and (min-width: 769px){
+    #skill{
+        margin: 0 0 100px 0;
+    }
+    .skill__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .skill__text{
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 768px) and (min-width: 576px){
+    #skill{
+        margin: 0 0 80px 0;
+    }
+    .skill__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .skill__inner{
+        width: 100%;
+    }
+    .skill__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .skill__text{
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 575px){
+    #skill{
+        margin: 0 0 80px 0;
+    }
+    .skill__inner{
+        width: 100%;
+    }
+    .skill__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .skill__text{
+        font-size: 22px;
+        line-height: 28px;
+    }
 }

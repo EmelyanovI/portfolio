@@ -80,3 +80,34 @@
     text-align: center;
     padding: 10px 0 0 0;
 }
+@media (max-width: 1199px) and (min-width: 961px){
+}
+@media (max-width: 960px) and (min-width: 769px){
+}
+@media (max-width: 768px) and (min-width: 576px){
+    .footer__menu{
+        display: block;
+    }
+    .footer__info{
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+    .footer__info-nav{
+        padding: 0;
+    }
+    .footer__info-link{
+        line-height: 26px;
+    }
+}
+@media (max-width: 575px){
+    .footer__menu{
+        display: block;
+    }
+    .footer__info-nav{
+        padding: 0;
+    }
+    .footer__info-link{
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
