@@ -1,6 +1,7 @@
 .menu__btn{
     display: none;
     z-index: 5;
+    margin: 5px 0 0 0;
 }
 .menu__btn::before,
 .menu__btn::after{
@@ -89,12 +90,14 @@
         display: block;
     }
     .menu__btn::before{
+        margin: 15px 0 0 0;
         width: 50px;
         top: 0;
         border: none;
         border-top: 3px solid;
     }
     .menu__btn::after{
+        margin: 15px 0 0 0;
         width: 50px;
         top: 13px;
         padding: 10px 0 0 0;
@@ -154,12 +157,14 @@
         display: block;
     }
     .menu__btn::before{
+        margin: 15px 0 0 0;
         width: 50px;
         top: 0;
         border: none;
         border-top: 3px solid;
     }
     .menu__btn::after{
+        margin: 15px 0 0 0;
         width: 50px;
         top: 13px;
         padding: 10px 0 0 0;
