@@ -51,9 +51,6 @@
     outline: 2px solid #8fb4c9;
 }
 @media (max-width: 1199px) and (min-width: 961px){
-    #feedback{
-        margin: 100px 0 0 0;
-    }
     .feedback__title{
         width: 50%;
     }

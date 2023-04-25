@@ -22,7 +22,7 @@
     border-radius: 10px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: #e20000;
+    background-color: #8fb4c9;
 }
 .skill__inner:nth-child(1)::before{
     background-image: url(../image/icon-html.svg);
